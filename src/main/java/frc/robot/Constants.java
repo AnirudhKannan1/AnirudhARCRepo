@@ -14,26 +14,46 @@ package frc.robot;
  */
 public final class Constants 
 {
-    public static final class DriveTrainPorts
+    public static final class ShooterPorts
     {
-        public static final int LeftDriveTalonPort = 2; //need to check and test later
-        public static final int RightDriveTalonPort = 3;
-        public static final int LeftDriveVictorPort = 4;
-        public static final int RightDriveVictorPort = 5;
+        public static final int LeftFlywheelPort = 16;
+        public static final int RightFlywheelPort = 17;
+        public static final int pivotPort = 14;
+        public static final int rollerPort = 15;
     }
 
-    public static final class JoystickAxis 
+    public static final class leftFlywheelPIDConstants
     {
-        public static final int YAxis = 1;
-        public static final int XAxis = 0;
+        public static double pidP = 0.0;
+        public static double pidI = 0.0;
+        public static double pidD = 0.0;
     }
-    public static class I2CAddresses {
-        public static final int MaxbotixUltrasonicSensor = 112;
-    } 
-    public static final class USBOrder {
-        public static final int Two = 2;
-        public static final int Three = 3;
 
+    public static final class rightFlywheelPIDConstants
+    {
+        public static double pidP = 0.0;
+        public static double pidI = 0.0;
+        public static double pidD = 0.0;
+    }
+
+    public static final class leftFlywheelFF
+    {
+        public static double kS = 0.60377;
+        public static double kV = 0.29055;
+        public static double kA = 0.011119;
+    }
+
+    public static final class rightFlywheelFF
+    {
+        public static double kS = 0.44897;
+        public static double kV = 0.29086;
+        public static double kA = 0.01308;
+    }
+
+    public static final class USBOrder
+    {
+        public static final int Zero = 0;
+        public static final int One = 1;
     }
 }
 
